@@ -94,23 +94,39 @@ namespace TaskDay04
             //Console.WriteLine("arr3[1] = " + arr3[1]);
             #endregion
 
+            #region Problem3
+            //// Create a 2D array: 3 students, 3 subjects
+            //int[,] grades = new int[3, 3];
 
-            // Create a 2D array: 3 students, 3 subjects
-            int[,] grades = new int[3, 3];
+            //// Take input from the user
+            //for (int student = 0; student < 3; student++)
+            //{
+            //    Console.WriteLine($"Enter grades for Student {student + 1}:");
 
-            // Take input from the user
-            for (int student = 0; student < 3; student++)
-            {
-                Console.WriteLine($"Enter grades for Student {student + 1}:");
+            //    for (int subject = 0; subject < 3; subject++)
+            //    {
+            //        Console.Write($"Subject {subject + 1}: ");
+            //        grades[student, subject] = int.Parse(Console.ReadLine());
+            //    }
 
-                for (int subject = 0; subject < 3; subject++)
-                {
-                    Console.Write($"Subject {subject + 1}: ");
-                    grades[student, subject] = int.Parse(Console.ReadLine());
-                }
+            //    Console.WriteLine();
+            //}
 
-                Console.WriteLine();
-            }
+            //// Print the grades
+            //Console.WriteLine("Student Grades:");
+
+            //for (int student = 0; student < 3; student++)
+            //{
+            //    Console.Write($"Student {student + 1}: ");
+
+            //    for (int subject = 0; subject < 3; subject++)
+            //    {
+            //        Console.Write(grades[student, subject] + " ");
+            //    }
+
+            //    Console.WriteLine();
+            //}
+            #endregion
 
         }
     }
