@@ -216,16 +216,195 @@ namespace TaskDay05
             //PrintString(text: "Welcome", times: 3);
             #endregion
 
+            #region Problem11
+            //int[]? numbers = null;
 
-            int[]? numbers = null;
+            //Console.WriteLine($"Array length: {numbers?.Length}");
 
-            Console.WriteLine($"Array length: {numbers?.Length}");
+            //numbers = new int[] { 10, 20, 30, 40, 50 };
 
-            numbers = new int[] { 10, 20, 30, 40, 50 };
+            //Console.WriteLine($"Array length: {numbers?.Length}");
+            #endregion
 
-            Console.WriteLine($"Array length: {numbers?.Length}");
+            #region Problem12
+            //Console.Write("Enter a day of the week: ");
+            //string day = Console.ReadLine();
+
+            //int dayNumber = day.ToLower() switch
+            //{
+            //    "monday" => 1,
+            //    "tuesday" => 2,
+            //    "wednesday" => 3,
+            //    "thursday" => 4,
+            //    "friday" => 5,
+            //    "saturday" => 6,
+            //    "sunday" => 7,
+            //    _ => 0
+            //};
+
+            //if (dayNumber == 0)
+            //{
+            //    Console.WriteLine("Invalid day.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Day number: {dayNumber}");
+            //}
+            #endregion
+
+            #region Problem13
+            //// Calling the method with individual values
+            //int result1 = SumArray(10, 20, 30);
+
+            //Console.WriteLine($"Sum of individual values: {result1}");
+
+            //// Calling the method with an array
+            //int[] numbers = { 5, 10, 15, 20 };
+
+            //int result2 = SumArray(numbers);
+
+            //Console.WriteLine($"Sum of array values: {result2}");
+            #endregion
 
 
+            //----------------------- Part 02 -----------------------//
+
+            #region P1
+            //Console.Write("Enter a positive integer: ");
+            //int number = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= number; i++)
+            //{
+            //    Console.Write(i);
+
+            //    if (i < number)
+            //    {
+            //        Console.Write(", ");
+            //    }
+            //}
+            #endregion
+
+            #region P2
+            //Console.Write("Enter an integer: ");
+            //int number = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    Console.Write(number * i);
+
+            //    if (i < 12)
+            //    {
+            //        Console.Write(", ");
+            //    }
+            //}
+            #endregion
+
+            #region P3
+            //Console.Write("Enter a number: ");
+            //int number = int.Parse(Console.ReadLine());
+
+            //for (int i = 1; i <= number; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.Write(i);
+
+            //        if (i < number - 1)
+            //        {
+            //            Console.Write(", ");
+            //        }
+            //    }
+            //}
+            #endregion
+
+            #region P4
+            //Console.Write("Enter the base number: ");
+            //int baseNumber = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter the exponent: ");
+            //int exponent = int.Parse(Console.ReadLine());
+
+            //int result = 1;
+
+            //for (int i = 1; i <= exponent; i++)
+            //{
+            //    result *= baseNumber;
+            //}
+
+            //Console.WriteLine($"Result: {result}");
+            #endregion
+
+            #region P5
+            //Console.Write("Enter a string: ");
+            //string text = Console.ReadLine();
+
+            //for (int i = text.Length - 1; i >= 0; i--)
+            //{
+            //    Console.Write(text[i]);
+            //}
+            #endregion
+
+            #region P6
+            //Console.Write("Enter an integer: ");
+            //int number = int.Parse(Console.ReadLine());
+
+            //int reversed = 0;
+
+            //while (number != 0)
+            //{
+            //    int digit = number % 10;
+            //    reversed = reversed * 10 + digit;
+            //    number /= 10;
+            //}
+
+            //Console.WriteLine($"Reversed number: {reversed}");
+            #endregion
+
+            #region P7
+            //Console.Write("Enter the size of the array: ");
+            //int n = int.Parse(Console.ReadLine());
+
+            //int[] numbers = new int[n];
+
+            //// Read array values from the user
+            //for (int i = 0; i < n; i++)
+            //{
+            //    Console.Write($"Enter element {i + 1}: ");
+            //    numbers[i] = int.Parse(Console.ReadLine());
+            //}
+
+            //int maxDistance = 0;
+
+            //// Find the longest distance between identical elements
+            //for (int i = 0; i < n; i++)
+            //{
+            //    for (int j = i + 1; j < n; j++)
+            //    {
+            //        if (numbers[i] == numbers[j])
+            //        {
+            //            int distance = j - i - 1;
+
+            //            if (distance > maxDistance)
+            //            {
+            //                maxDistance = distance;
+            //            }
+            //        }
+            //    }
+            //}
+
+            //Console.WriteLine($"Longest distance: {maxDistance}");
+            #endregion
+
+            #region P8
+            //Console.Write("Enter a sentence: ");
+            //string sentence = Console.ReadLine();
+
+            //string[] words = sentence.Split(' ');
+
+            //Array.Reverse(words);
+
+            //Console.WriteLine(string.Join(" ", words));
+            #endregion
         }
 
         // Belongs to Problem1
@@ -252,13 +431,27 @@ namespace TaskDay05
         }
 
         // Belongs to Problem10
-        static void PrintString(string text, int times = 5)
+        public static void PrintString(string text, int times = 5)
         {
             for (int i = 0; i < times; i++)
             {
                 Console.WriteLine(text);
             }
         }
+
+        // Belongs to Problem13
+        public static int SumArray(params int[] numbers)
+        {
+            int sum = 0;
+
+            foreach (int number in numbers)
+            {
+                sum += number;
+            }
+
+            return sum;
+        }
+
 
     }
 }
