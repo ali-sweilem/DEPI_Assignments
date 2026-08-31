@@ -152,24 +152,83 @@ namespace TaskDay05
             //}
             #endregion
 
+            #region Problem7
+            //string? name = null;
 
-            string? name = null;
+            //Console.Write("Do you want to enter your name? (yes/no): ");
+            //string? answer = Console.ReadLine();
 
-            Console.Write("Do you want to enter your name? (yes/no): ");
-            string? answer = Console.ReadLine();
+            //// Assign a value conditionally
+            //if (answer == "yes")
+            //{
+            //    Console.Write("Enter your name: ");
+            //    name = Console.ReadLine();
+            //}
 
-            // Assign a value conditionally
-            if (answer == "yes")
-            {
-                Console.Write("Enter your name: ");
-                name = Console.ReadLine();
-            }
+            //// Use the null-forgiveness operator
+            //string? NoName = name ?? "Anonymous"; // for fun //
+            //Console.WriteLine($"Hello, {NoName!}");
+            #endregion
 
-            // Use the null-forgiveness operator
-            string? noname = name ?? "Anonymous";
-            Console.WriteLine($"Hello, {noname!}");
+            #region Problem8
+            //// Boxing: converting a value type to an object
+            //int number = 100;
+            //object obj = number;
+
+            //Console.WriteLine($"Boxed value: {obj}");
+
+            //try
+            //{
+            //    // Unboxing: converting the object back to int
+            //    int result = (int)obj;
+
+            //    Console.WriteLine($"Unboxed value: {result}");
+
+            //    // Trying an invalid unboxing
+            //    string text = (string)obj;
+            //}
+            //catch (InvalidCastException)
+            //{
+            //    Console.WriteLine("Error: Invalid cast. The object cannot be converted to the requested type.");
+            //}
+            #endregion
+
+            #region Problem9
+            //Console.Write("Enter the first integer: ");
+            //int x = int.Parse(Console.ReadLine());
+
+            //Console.Write("Enter the second integer: ");
+            //int y = int.Parse(Console.ReadLine());
+
+            //SumAndMultiply(x, y, out int sum, out int product);
+
+            //Console.WriteLine($"Sum: {sum}");
+            //Console.WriteLine($"Product: {product}");
+            #endregion
+
+            #region Problem10
+            //// Using the default value (5)
+            //PrintString("Hello");
+
+            //Console.WriteLine();
+
+            //// Using a named parameter
+            //PrintString(text: "Welcome", times: 3);
+            #endregion
+
+
+            int[]? numbers = null;
+
+            Console.WriteLine($"Array length: {numbers?.Length}");
+
+            numbers = new int[] { 10, 20, 30, 40, 50 };
+
+            Console.WriteLine($"Array length: {numbers?.Length}");
+
+
         }
 
+        // Belongs to Problem1
         public static void TestDefensiveCode(int x, int y)
         {
             if (x < 0)
@@ -183,6 +242,22 @@ namespace TaskDay05
 
             Console.WriteLine($"X = {x}, Y = {y}");
 
+        }
+
+        // Belongs to Problem9
+        public static void SumAndMultiply(int x, int y, out int sum, out int product)
+        {
+            sum = x + y;
+            product = x * y;
+        }
+
+        // Belongs to Problem10
+        static void PrintString(string text, int times = 5)
+        {
+            for (int i = 0; i < times; i++)
+            {
+                Console.WriteLine(text);
+            }
         }
 
     }
