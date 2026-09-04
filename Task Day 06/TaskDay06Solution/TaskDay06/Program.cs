@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Emit;
 
 namespace TaskDay06
 {
@@ -24,6 +25,16 @@ namespace TaskDay06
             Console.WriteLine("Employee Salary: " + emp.Salary);
             Console.WriteLine("Employee Name: " + emp.GetName());
             Console.WriteLine("Employee ID: " + emp.EmpId);
+
+
+            // Constructor 1:
+            Point p1 = new Point(10);
+
+            // Constructor 2:
+            Point p2 = new Point(10, 20);
+
+            Console.WriteLine($"P1 = ({p1.X}, {p1.Y})");
+            Console.WriteLine($"P2 = ({p2.X}, {p2.Y})");
         }
     }
 }
