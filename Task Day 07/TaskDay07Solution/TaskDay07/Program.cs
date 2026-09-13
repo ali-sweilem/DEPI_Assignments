@@ -1,6 +1,7 @@
 ﻿using System;
 using TaskDay07.Problem6;
 using TaskDay07.Problem9;
+using TaskDay07.Problem10;
 
 namespace TaskDay07
 {
@@ -94,11 +95,26 @@ namespace TaskDay07
             //((IShape)circle).PrintDetails();
             #endregion
 
+            #region Problem8
+            //IMovable movable = new Car();
 
-            IMovable movable = new Car();
+            //movable.Move();
+            #endregion
 
-            movable.Move();
+            #region Problem9
+            //File file = new File();
 
+            //file.Read();
+            //file.Write();
+            #endregion
+
+            #region Problem10
+            //Rectangle rectangle = new Rectangle(10, 5);
+
+            //rectangle.Draw();
+
+            //Console.WriteLine($"Area = {rectangle.CalculateArea()}");
+            #endregion
         }
     }
 }
