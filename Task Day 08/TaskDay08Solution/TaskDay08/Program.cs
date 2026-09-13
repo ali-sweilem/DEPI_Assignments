@@ -4,6 +4,8 @@ using TaskDay08.Problem2;
 using TaskDay08.Problem3;
 using TaskDay08.Problem4;
 using TaskDay08.Problem5;
+using TaskDay08.Problem6;
+using TaskDay08.Problem7;
 
 namespace TaskDay08
 {
@@ -81,14 +83,43 @@ namespace TaskDay08
             //deepCopy.Display();
             #endregion
 
-            Robot robot = new Robot();
+            #region Problem5
+            //Robot robot = new Robot();
 
-            // Calls Robot's own Walk() method
-            robot.Walk();
+            //// Calls Robot's own Walk() method
+            //robot.Walk();
 
-            // Calls the explicit interface implementation
-            IWalkable walkableRobot = robot;
-            walkableRobot.Walk();
+            //// Calls the explicit interface implementation
+            //IWalkable walkableRobot = robot;
+            //walkableRobot.Walk();
+            #endregion
+
+            #region Problem6
+            //Account account = new Account();
+
+            //account.Id = 1;
+            //account.Holder = "A";
+            //account.AccountBalance = 1500;
+
+            //Console.WriteLine($"Account ID: {account.Id}");
+            //Console.WriteLine($"Account Holder: {account.Holder}");
+            //Console.WriteLine($"Balance: {account.AccountBalance}");
+            #endregion
+
+            #region Problem7
+            //// Using the default constructor
+            //Book book1 = new Book();
+
+            //// Using the constructor with Title
+            //Book book2 = new Book("Clean Code");
+
+            //// Using the constructor with Title and Author
+            //Book book3 = new Book("The Pragmatic Programmer", "Andrew Hunt");
+
+            //book1.Display();
+            //book2.Display();
+            //book3.Display();
+            #endregion
         }
     }
 }
