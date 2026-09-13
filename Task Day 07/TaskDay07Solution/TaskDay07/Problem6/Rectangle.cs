@@ -10,7 +10,7 @@ namespace TaskDay07.Problem6
     {
         public int Width { get; set; }
         public int Height { get; set; }
-        public int Area 
+        public double Area 
         {
             get { return Width * Height; } 
         }

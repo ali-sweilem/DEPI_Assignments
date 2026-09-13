@@ -1,5 +1,6 @@
 ﻿using System;
 using TaskDay07.Problem6;
+using TaskDay07.Problem9;
 
 namespace TaskDay07
 {
@@ -71,14 +72,32 @@ namespace TaskDay07
             //Console.WriteLine(child);
             #endregion
 
-            Rectangle rec = new Rectangle();
+            #region Problem6
+            //Rectangle rec = new Rectangle();
 
-            rec.Width = 20;
-            rec.Height = 5;
+            //rec.Width = 20;
+            //rec.Height = 5;
 
-            Console.WriteLine($"Area = {rec.Area}");
+            //Console.WriteLine($"Area = {rec.Area}");
 
-            rec.Draw();
+            //rec.Draw();
+            #endregion
+
+            #region Problem7
+            //Circle circle = new Circle();
+
+            //circle.Radius = 5;
+
+            //circle.Draw();
+
+            //// Calling the default interface method
+            //((IShape)circle).PrintDetails();
+            #endregion
+
+
+            IMovable movable = new Car();
+
+            movable.Move();
 
         }
     }

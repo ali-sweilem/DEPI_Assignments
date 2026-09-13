@@ -8,8 +8,13 @@ namespace TaskDay07.Problem6
 {
     internal interface IShape
     {
-        public int Area { get; }
+        public double Area { get; }
 
         void Draw();
+
+        void PrintDetails()
+        {
+            Console.WriteLine($"Area = {Area}");
+        }
     }
 }
