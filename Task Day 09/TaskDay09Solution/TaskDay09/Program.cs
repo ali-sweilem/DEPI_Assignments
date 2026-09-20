@@ -70,22 +70,26 @@ namespace TaskDay09
             //Console.WriteLine($"{celsius}°C = {fahrenheit}°F");
             #endregion
 
-            Employee[] employees =
-        {
-            new Employee(1, "Ali"),
-            new Employee(2, "Ahmed"),
-            new Employee(3, "Omar")
-        };
+            #region Problem9
+            //Employee[] employees =
+            //{
+            //    new Employee(1, "Ali"),
+            //    new Employee(2, "Ahmed"),
+            //    new Employee(3, "Omar")
+            //};
 
-            // Different object, but same Id as Ahmed
-            Employee employeeToSearch = new Employee(2, "Ahmed");
+            //// Different object, but same Id as Ahmed
+            //Employee employeeToSearch = new Employee(2, "Ahmed");
 
-            int index = Helper2<Employee>.SearchArray(
-                employees,
-                employeeToSearch
-            );
+            //int index = Helper2<Employee>.SearchArray(
+            //    employees,
+            //    employeeToSearch
+            //);
 
-            Console.WriteLine($"Employee found at index: {index}");
+            //Console.WriteLine($"Employee found at index: {index}");
+            #endregion
+
+
         }
 
         public enum Weekdays
