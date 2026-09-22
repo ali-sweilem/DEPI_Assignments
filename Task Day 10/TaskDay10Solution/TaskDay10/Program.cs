@@ -115,21 +115,25 @@ namespace TaskDay10
             #endregion
 
             #region Problem7
-            int[] arr = { 1, 2, 3, 4, 5 };
-            Console.WriteLine("Before swap");
+            //int[] arr = { 1, 2, 3, 4, 5 };
+            //Console.WriteLine("Before swap");
 
-            foreach (int i in arr)
-            {
-                Console.Write($"{i}, ");
-            }
+            //foreach (int i in arr)
+            //{
+            //    Console.Write($"{i}, ");
+            //}
 
-            SortingAlgorithm<int>.Swap(ref arr[0], ref arr[3]);
-            Console.WriteLine();
-            Console.WriteLine("After swap");
-            foreach (int i in arr)
-            {
-                Console.Write($"{i}, ");
-            }
+            //SortingAlgorithm<int>.Swap(ref arr[0], ref arr[3]);
+            //Console.WriteLine();
+            //Console.WriteLine("After swap");
+            //foreach (int i in arr)
+            //{
+            //    Console.Write($"{i}, ");
+            //}
+            #endregion
+
+            #region Problem8
+
             #endregion
         }
     }
