@@ -21,3 +21,10 @@ This repository contains my DEPI assignments, organized by topic.
 | Task Day 08 | (OOP) |
 | Task Day 09 | (OOP) |
 | Task Day 10 | (OOP) |
+
+## LINQ and Entity Framework Assignments
+
+| Task        | Topic |
+|-------------|-------|
+| Task Day 11 | LINQ and EF |
+| Task Day 12 | LINQ and EF |
