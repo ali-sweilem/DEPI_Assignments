@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TaskDay10.Problem2;
 
-namespace TaskDay10.Problem2
+namespace TaskDay10.Problem5
 {
-    delegate int CompareDelegate<T>(T x, T y);
     internal static class SortingTwo<T>
     {
-        public static void Sort(T[] items, CompareDelegate<T> compare)
+        public static void Sort(T[] items, Func<T,T,int> compare)
         {
             for (int i = 0; i < items.Length; i++)
             {

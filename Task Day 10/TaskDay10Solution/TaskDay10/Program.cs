@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Reflection;
-using TaskDay10.Problem1;
-using TaskDay10.Problem2;
-using TaskDay10.Problem4;
+using System.Security.Cryptography.X509Certificates;
+//using TaskDay10.Problem1;
+
+
+//using TaskDay10.Problem1;
+//using TaskDay10.Problem2;
+using TaskDay10.Problem7;
 
 namespace TaskDay10
 {
@@ -80,7 +84,53 @@ namespace TaskDay10
             //}
             #endregion
 
+            #region Problem5
+            //Employee[] employee =
+            //{
+            //    new Employee(1, "Ali", 10000),
+            //    new Employee(2, "Ahmed", 7000),
+            //    new Employee(3, "Omar", 15000)
+            //};
 
+            //SortingTwo<Employee>.Sort(employee, CompareByNameLength);
+
+            //static int CompareByNameLength(Employee emp1, Employee emp2)
+            //{
+            //    return emp1.Name.Length.CompareTo(emp2.Name.Length);
+            //}
+
+            //foreach (Employee emp in employee)
+            //{
+            //    Console.WriteLine(emp.Name);
+            //}
+            #endregion
+
+            #region Problem6
+            //int[] arr = { 3, 1, 5, 4, 2, 0 };
+            //SortingTwo<int>.Sort(arr, (x, y) => x.CompareTo(y));
+            //foreach (int i in arr)
+            //{
+            //    Console.Write($"{i}, ");
+            //}
+            #endregion
+
+            #region Problem7
+            int[] arr = { 1, 2, 3, 4, 5 };
+            Console.WriteLine("Before swap");
+
+            foreach (int i in arr)
+            {
+                Console.Write($"{i}, ");
+            }
+
+            SortingAlgorithm<int>.Swap(ref arr[0], ref arr[3]);
+            Console.WriteLine();
+            Console.WriteLine("After swap");
+            foreach (int i in arr)
+            {
+                Console.Write($"{i}, ");
+            }
+            #endregion
         }
     }
 }
