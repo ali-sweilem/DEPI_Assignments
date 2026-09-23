@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using TaskDay11.Part_3;
 
 namespace TaskDay11
 {
@@ -44,20 +46,84 @@ namespace TaskDay11
             #endregion
 
             #region Part02
-            var anonymous = new {Name = "CocaCola", Price = 15.0, Quantity = 22};
-            Console.WriteLine(anonymous.ToString());
+            // --------------- Problem 1 -----------------//
+            //var anonymous = new {Name = "CocaCola", Price = 15.0, Quantity = 22};
 
-            var AnonymousArray = new[] 
+            //Console.WriteLine(anonymous.ToString());
+
+
+            // --------------- Problem 2 -----------------//
+            //var AnonymousArray = new[] 
+            //{
+            //    new { Name = "Ali", Grade = 90 },
+            //    new { Name = "Ahmed", Grade = 85 },
+            //    new { Name = "Omar", Grade = 95 }
+            //};
+
+            //foreach (var item in AnonymousArray)
+            //{
+            //    Console.WriteLine(item.ToString());
+            //}
+            #endregion
+
+            #region Part03
+            // --------------- Problem 1 -----------------//
+            //string text = "BooB";
+            //string text1 = "GOGOG";
+            //string text2 = "SOSOL";
+
+            //Console.WriteLine(text.IsPalindrome());
+            //Console.WriteLine(text1.IsPalindrome());
+            //Console.WriteLine(text2.IsPalindrome());
+
+            // --------------- Problem 2 -----------------//
+            //int number = 756;
+            //int number1 = 433;
+            //int number2 = 5;
+
+            //Console.WriteLine(number.IsPrime());
+            //Console.WriteLine(number1.IsPrime());
+            //Console.WriteLine(number2.IsPrime());
+
+            #endregion
+
+            #region Part04
+            List<string> employees = new List<string>
             {
-                new { Name = "Ali", Grade = 90 },
-                new { Name = "Ahmed", Grade = 85 },
-                new { Name = "Omar", Grade = 95 }
+                "Ali",
+                "Ahmed",
+                "Amr",
+                "Hossam"
             };
 
-            foreach (var item in AnonymousArray)
+            // Add
+            employees.Add("Omar");
+            // Remove
+            employees.Remove("Amr");
+
+            // Search for an employee
+            string searchName = "Ahmed";
+            bool found = false;
+
+            foreach (string employee in employees)
             {
-                Console.WriteLine(item.ToString());
+                if (employee == searchName)
+                {
+                    found = true;
+                    break;
+                }
             }
+
+            Console.WriteLine($"Employee '{searchName}' found: {found}");
+
+            // Print the final list
+            Console.WriteLine("\nFinal Employee List:");
+
+            foreach (string employee in employees)
+            {
+                Console.WriteLine(employee);
+            }
+
             #endregion
         }
     }
