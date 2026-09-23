@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using TaskDay11.Part_3;
+using TaskDay11.Part_4;
 
 namespace TaskDay11
 {
@@ -88,42 +89,67 @@ namespace TaskDay11
             #endregion
 
             #region Part04
-            List<string> employees = new List<string>
-            {
-                "Ali",
-                "Ahmed",
-                "Amr",
-                "Hossam"
-            };
+            // --------------- Problem 1 -----------------//
 
-            // Add
-            employees.Add("Omar");
-            // Remove
-            employees.Remove("Amr");
+            //List<string> employees = new List<string>
+            //{
+            //    "Ali",
+            //    "Ahmed",
+            //    "Amr",
+            //    "Hossam"
+            //};
 
-            // Search for an employee
-            string searchName = "Ahmed";
-            bool found = false;
+            //// Add
+            //employees.Add("Omar");
+            //// Remove
+            //employees.Remove("Amr");
 
-            foreach (string employee in employees)
-            {
-                if (employee == searchName)
-                {
-                    found = true;
-                    break;
-                }
-            }
+            //// Search for an employee
+            //string searchName = "Ahmed";
+            //bool found = false;
 
-            Console.WriteLine($"Employee '{searchName}' found: {found}");
+            //foreach (string employee in employees)
+            //{
+            //    if (employee == searchName)
+            //    {
+            //        found = true;
+            //        break;
+            //    }
+            //}
 
-            // Print the final list
-            Console.WriteLine("\nFinal Employee List:");
+            //Console.WriteLine($"Employee '{searchName}' found: {found}");
 
-            foreach (string employee in employees)
-            {
-                Console.WriteLine(employee);
-            }
+            //// Print the final list
+            //Console.WriteLine("\nFinal Employee List:");
 
+            //foreach (string employee in employees)
+            //{
+            //    Console.WriteLine(employee);
+            //}
+
+            // --------------- Problem 2 -----------------//
+
+            //List<Employee> employees = new List<Employee>
+            //{
+            //    new Employee("Ali", 10000),
+            //    new Employee("Ahmed", 7000),
+            //    new Employee("Amr", 15000),
+            //    new Employee("Hossam", 9000)
+            //};
+
+            //double givenSalary = 9000;
+
+            //Console.WriteLine($"Employees with salary above {givenSalary}:");
+
+            //foreach (Employee employee in employees)
+            //{
+            //    if (employee.Salary > givenSalary)
+            //    {
+            //        Console.WriteLine(
+            //            $"Name: {employee.Name}, Salary: {employee.Salary}"
+            //        );
+            //    }
+            //}
             #endregion
         }
     }
