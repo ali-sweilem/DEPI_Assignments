@@ -28,3 +28,4 @@ This repository contains my DEPI assignments, organized by topic.
 |-------------|-------|
 | Task Day 11 | LINQ and EF |
 | Task Day 12 | LINQ and EF |
+| Task Day 13 | LINQ and EF |
