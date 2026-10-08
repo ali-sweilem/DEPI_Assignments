@@ -12,15 +12,15 @@ This repository contains my DEPI assignments, organized by topic.
 | Task Day 04 | C# |
 | Task Day 05 | C# |
 
-## OOP Assignments
+## OOD Assignments
 
 | Task        | Topic |
 |-------------|-------|
-| Task Day 06 | (OOP) |
-| Task Day 07 | (OOP) |
-| Task Day 08 | (OOP) |
-| Task Day 09 | (OOP) |
-| Task Day 10 | (OOP) |
+| Task Day 06 | (OOD) |
+| Task Day 07 | (OOD) |
+| Task Day 08 | (OOD) |
+| Task Day 09 | (OOD) |
+| Task Day 10 | (OOD) |
 
 ## LINQ and Entity Framework Assignments
 
