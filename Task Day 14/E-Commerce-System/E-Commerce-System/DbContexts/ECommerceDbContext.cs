@@ -13,7 +13,7 @@ namespace E_Commerce_System.DbContexts
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=.;Database=Sabah;Trusted_Connection=True;");
+            optionsBuilder.UseSqlServer("Server=.;Database=ECommerceSystem;Trusted_Connection=True;");
         }
 
         public DbSet<Product> Products { get; set; }

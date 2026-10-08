@@ -8,8 +8,10 @@ namespace E_Commerce_System.Models
 {
     internal class OrderDetail
     {
-        public int orderId { get; set; }
+        public int OrderId { get; set; }
         public int ProductId{ get; set; }
         public int Quantity { get; set; }
+        public Order Order { get; set; }
+        public ICollection<Product> Products { get; set; }
     }
 }
